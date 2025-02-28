@@ -3,7 +3,7 @@
 ### This is an early learning project in a field I've become quite interested in, any feedback or critiques on my code or approach (especially if I missed any mistakes) is well appreciated!
 
 #### Summary
-This is a comparison of CNN-LSTM and CNN-GRU for financial forecasting tasks. This comparison was based on the task of 1 day forecasting, which both architectures excelled on with unseen data. While results should be considered weak, GRU actually outperformed LSTM, perhaps due to the simpler nature of the dataset and LSTM's extra parameters making it more prone to overfitting. 
+This is a comparison of CNN-LSTM (paper linked below) and CNN-GRU for financial forecasting tasks. This comparison was based on the task of 1 day forecasting, which both architectures excelled on with unseen data. While results should be considered weak, GRU actually outperformed LSTM, perhaps due to the simpler nature of the dataset and LSTM's extra parameters making it more prone to overfitting. 
 
 While much work is to be done confirming the results (for example: no hyperparam tuning was used), these early experiments show that GRU (the simpler and faster architecture) may potentially outform LSTM on certain trading instruments, which yield potential applications in both desk and automated trading where nanoseconds count.
 
@@ -17,5 +17,7 @@ Furthermore, no ablation study was done. For example, the model uses the previou
 The training dataset is drawn from real life historical data from: https://au.investing.com/currencies/aud-usd-historical-data
 
 The training set is based on data from 2010 to 2024 starting from the peak of the AUD against the USD, and the test set is based on unseen data from 2024-2025.
+
+CNN_LTSM paper: https://arxiv.org/pdf/2305.14378
 
 ![Prediction Chart](predictionChart.png)

@@ -12,5 +12,7 @@ To be more precise, the task is to forecast the next day's opening price. The en
 
 As mentioned above, GRU outperformed LSTM in terms of prediction accuracy, with an MAE of 0.0009 as opposed to 0.0011 on the LSTM based model. This result is to be considered **low yield** simply due to the fact that only one dataset was used, the task was quite simple, and the fact that no hyperparameter tuning was done. However in saying this, GRU is a much simpler architecture than LSTM with less gates and less parameters - it is possible that this reduction in complexity may lend itself well to the simpler task and smaller dataset. 
 
+The training dataset is drawn from real life historical data from: https://au.investing.com/currencies/aud-usd-historical-data
+The training set is based on data from 2010 to 2024 starting from the peak of the AUD against the USD, and the test set is based on unseen data from 2024-2025
 
 ![Prediction Chart](predictionChart.png)

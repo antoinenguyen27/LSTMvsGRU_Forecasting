@@ -6,4 +6,4 @@ This is a comparison of CNN-LSTM and CNN-GRU for financial forecasting tasks. Th
 
 While much work is to be done confirming the results (for example: no hyperparam tuning was used), these early experiments show that GRU (the simpler and faster architecture) may potentially outform LSTM on certain trading instruments, which yield potential applications in both desk and automated trading where nanoseconds count.
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/antoinenguyen27/LSTMvsGRU_Forecasting/blob/main/predictionChart.png)?raw=true)
+![Prediction Chart](predictionChart.png)

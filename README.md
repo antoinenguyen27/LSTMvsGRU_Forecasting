@@ -16,6 +16,6 @@ Furthermore, no ablation study was done. For example, the model uses the previou
 
 The training dataset is drawn from real life historical data from: https://au.investing.com/currencies/aud-usd-historical-data
 
-The training set is based on data from 2010 to 2024 starting from the peak of the AUD against the USD, and the test set is based on unseen data from 2024-2025
+The training set is based on data from 2010 to 2024 starting from the peak of the AUD against the USD, and the test set is based on unseen data from 2024-2025.
 
 ![Prediction Chart](predictionChart.png)

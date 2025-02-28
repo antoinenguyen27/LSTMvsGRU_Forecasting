@@ -15,6 +15,7 @@ As mentioned above, GRU outperformed LSTM in terms of prediction accuracy, with 
 Furthermore, no ablation study was done. For example, the model uses the previous 30 days of data to make its prediction, I have not done any experiments on if changing the length of this window affects predictions or not. I also add some simple technical indicators, however am yet to show that these are actually useful. Verification of these ideas is to be left for future work. 
 
 The training dataset is drawn from real life historical data from: https://au.investing.com/currencies/aud-usd-historical-data
+
 The training set is based on data from 2010 to 2024 starting from the peak of the AUD against the USD, and the test set is based on unseen data from 2024-2025
 
 ![Prediction Chart](predictionChart.png)

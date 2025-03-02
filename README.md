@@ -2,6 +2,9 @@
 
 ### This is an early learning project in a field I've become quite interested in, any feedback or critiques on my code or approach (especially if I missed any mistakes) is well appreciated!
 
+
+### Update! Closing price forecasting tested on both architectures, see below for results
+
 #### Summary
 This is a comparison of CNN-LSTM (paper linked below) and CNN-GRU for financial forecasting tasks. This comparison was based on the task of 1 day forecasting, which both architectures excelled on with unseen data. While results should be considered weak, GRU actually outperformed LSTM, perhaps due to the simpler nature of the dataset and LSTM's extra parameters making it more prone to overfitting. 
 
@@ -25,3 +28,15 @@ The training set is based on data from 2010 to 2024 starting from the peak of th
 CNN_LTSM paper: https://arxiv.org/pdf/2305.14378
 
 ![Prediction Chart](predictionChart.png)
+
+
+#### Trying both models on closing price prediction
+As mentioned in the future work above closing price prediction was more challenging for the models, with a 2-3x higher MAE on average compared to the opening price predictions. The only changes to the models besides the target label during training is the addition of the current day's opening price, as in this scenario the model would be used prior to market close to inform strategy trading at the close (not sure how realistic this really is).
+
+#### Results discussion
+In this task both models performed similarly, with an average MAE of 0.0029 for both, this varied between runs when seed was changed where CNN-LSTM often performed slightly better. The closing of the gap between LSTM and GRU models may support the hypothesis raised in earlier experiments that GRU is better suited to less complex tasks. However, when it comes to error characteristics, the distribution of errors made in terms of distance between prediction and actual slightly favours GRU (I eyeballed it). You can see for yourself below. 
+
+#### Future work
+Future work has not changed a great deal with the exception of "testing models on closing prices" being somewhat completed. Once again however there is much work to be done on hyperparameter tuning, ablation studies and other further work to be done in supporting the validity of these experiments (which I must iterate again is quite poor).
+
+

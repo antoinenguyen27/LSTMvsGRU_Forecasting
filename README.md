@@ -27,7 +27,7 @@ The training set is based on data from 2010 to 2024 starting from the peak of th
 
 CNN_LTSM paper: https://arxiv.org/pdf/2305.14378
 
-![Prediction Chart](predictionChart.png)
+![Prediction Chart](charts/predictionChart.png)
 
 
 #### Trying both models on closing price prediction
@@ -38,5 +38,11 @@ In this task both models performed similarly, with an average MAE of 0.0029 for 
 
 #### Future work
 Future work has not changed a great deal with the exception of "testing models on closing prices" being somewhat completed. Once again however there is much work to be done on hyperparameter tuning, ablation studies and other further work to be done in supporting the validity of these experiments (which I must iterate again is quite poor).
+
+![Prediction Chart](charts/closingPredictions.png)
+
+
+![Prediction Chart](charts/closingPredictionDistributions.png)
+
 
 

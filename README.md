@@ -30,7 +30,7 @@ CNN_LTSM paper: https://arxiv.org/pdf/2305.14378
 ![Prediction Chart](charts/predictionChart.png)
 
 
-#### Trying both models on closing price prediction
+### Trying both models on closing price prediction
 As mentioned in the future work above closing price prediction was more challenging for the models, with a 2-3x higher MAE on average compared to the opening price predictions. The only changes to the models besides the target label during training is the addition of the current day's opening price, as in this scenario the model would be used prior to market close to inform strategy trading at the close (not sure how realistic this really is).
 
 #### Results discussion
